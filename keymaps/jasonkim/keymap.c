@@ -39,10 +39,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_RAISE] = LAYOUT_split_3x5_3(
-        KC_ESC,   KC_UP,           XXXXXXX,         XXXXXXX,         CK_TOGG,             KC_NUM_LOCK,  KC_KP_7,          KC_KP_8,         KC_KP_9,           KC_KP_MINUS,
-        KC_LEFT,  RALT_T(KC_DOWN), LCTL_T(KC_RGHT), LSFT_T(XXXXXXX), KC_LGUI,             XXXXXXX,      LSFT_T(KC_KP_4),  LCTL_T(KC_KP_5), RALT_T(KC_KP_6),   KC_KP_PLUS,
-        KC_MPRV,  KC_MSTP,         KC_MPLY,         KC_MNXT,         KC_PSCR,             XXXXXXX,      KC_KP_1,          KC_KP_2,         KC_KP_3,           KC_KP_0,
-                                   KC_TRNS,         KC_TRNS,         KC_TAB,              KC_ENT,       KC_TRNS,          KC_TRNS
+        SFT(KC_1), SFT(KC_2),    SFT(KC_3),        KC_GRAVE,         KC_LBRC,          KC_RBRC,      KC_NO,              KC_NO,           KC_NO,            KC_NO,
+        SFT(KC_6),  KC_EQUAL,    SFT(KC_MINUS),    LSFT_T(KC_4),      KC_LPRN,         KC_RPRN,      KC_TILDE,       SFT(KC_7),       SFT(KC_5),          KC_SCLN,
+        SFT(KC_8),  KC_MSTP,         KC_MINUS,       KC_PLUS,     SFT(KC_LBRC),    SFT(KC_RBRC),      KC_KP_1,          KC_NO,          KC_NO,           KC_NO,
+                                     KC_NO,       SFT(KC_SCLN),      SFT(KC_2),          KC_NO,         KC_NO,         KC_NO 
     ),
 
 
