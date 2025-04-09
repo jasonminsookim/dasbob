@@ -28,14 +28,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,    KC_W,              KC_E,            KC_R,            KC_T,               KC_Y,         KC_U,              KC_I,              KC_O,           KC_P,
         LCTL_T(KC_A),LALT_T(KC_S),  LGUI_T(KC_D),    LSFT_T(KC_F),    KC_G,               KC_H,         RSFT_T(KC_J),      RGUI_T(KC_K),      RALT_T(KC_L),   RCTL_T(KC_QUOT),
         KC_Z,    KC_X,              KC_C,            KC_V,            KC_B,               KC_N,         KC_M,              KC_COMM,           KC_DOT,         KC_SLSH,
-                                    KC_NO,          LT(_LOWER,  KC_BSPC),              KC_ESC,          KC_ENTER,     LT(_RAISE,KC_SPACE),        KC_NO,
+                                    KC_NO,          LT(_LOWER,  KC_BSPC),              KC_ESC,          KC_ENTER,     LT(_RAISE,KC_SPACE),        KC_NO
     ),
 
     [_LOWER] = LAYOUT_split_3x5_3(
        KC_1,     KC_2,              KC_3,            KC_4,            KC_5,               KC_6,         KC_7,             KC_8,            KC_9,              KC_0,
        KC_LCTL,  KC_LALT,           KC_LGUI,         KC_LSFT,           KC_NO,           KC_LEFT,      KC_DOWN,            KC_UP,        KC_RIGHT,           KC_SCLN,
        KC_NO,    KC_NO,             KC_NO,          KC_NO,            KC_NO,             KC_NO,       KC_NO,             KC_NO,           KC_NO,           KC_NO,
-                                    KC_NO,         KC_NO,           KC_NO,              S(TAB),       TAB,          KC_NO
+                                    KC_NO,         KC_NO,           KC_NO,              S(KC_TAB),       KC_TAB,          KC_NO
     ),
 
     [_RAISE] = LAYOUT_split_3x5_3(
