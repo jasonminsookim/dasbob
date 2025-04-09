@@ -26,16 +26,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_QWERTY] = LAYOUT_split_3x5_3(
         KC_Q,    KC_W,              KC_E,            KC_R,            KC_T,               KC_Y,         KC_U,              KC_I,              KC_O,           KC_P,
-        KC_A,    RALT_T(KC_S),      LCTL_T(KC_D),    LSFT_T(KC_F),    KC_G,               KC_H,         RSFT_T(KC_J),      RGUI_T(KC_K),      RALT_T(KC_L),   RCTL_T(KC_QUOT),
+        CTL_T(KC_A),ALT_T(KC_S),    GUI_T(KC_D),    SFT_T(KC_F),    KC_G,               KC_H,         SFT_T(KC_J),      GUI_T(KC_K),      ALT_T(KC_L),   CTL_T(KC_QUOT),
         KC_Z,    KC_X,              KC_C,            KC_V,            KC_B,               KC_N,         KC_M,              KC_COMM,           KC_DOT,         KC_SLSH,
-                                    KC_NO,          KC_SPC,          KC_ESC,              KC_ENTER,     KC_BSPC,        KC_NO,
+                                    KC_NO,          LT(_LOWER,  KC_BSPC),              KC_ESC,          KC_ENTER,     LT(_RAISE,KC_SPACE),        KC_NO,
     ),
 
     [_LOWER] = LAYOUT_split_3x5_3(
        KC_1,     KC_2,              KC_3,            KC_4,            KC_5,               KC_6,         KC_7,             KC_8,            KC_9,              KC_0,
-       CK_RST,  RALT_T(XXXXXXX),   LCTL_T(XXXXXXX), LSFT_T(XXXXXXX), KC_PSCR,           KC_MINS,      LSFT_T(KC_EQL),   LCTL_T(KC_GRV),  RALT_T(KC_QUOT),    KC_BSLS,
-       CK_TOGG,  CK_UP,           CK_DOWN,         LCTL(KC_C),      LCTL(KC_V),         KC_TAB,      XXXXXXX,          XXXXXXX,         XXXXXXX,           XXXXXXX,
-                                    KC_TRNS,         KC_TRNS,         KC_TAB,             KC_ENT,       KC_TRNS,          KC_TRNS
+       KC_CTL,  KC_ALT,             KC_GUI,         KC_SFT,           KC_NO,           KC_LEFT,      KC_DOWN,            KC_UP,        KC_RIGHT,           KC_SCLN,
+       KC_NO,    KC_NO,             KC_NO,          KC_NO,            KC_NO,             KC_NO,       KC_NO,             KC_NO,           KC_NO,           KC_NO,
+                                    KC_NO,         KC_NO,           KC_NO,             SFT(TAB),       TAB,          KC_NO
     ),
 
     [_RAISE] = LAYOUT_split_3x5_3(
