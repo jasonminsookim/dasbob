@@ -53,7 +53,7 @@
 
 // Pick good defaults for enabling homerow modifiers
 #define CHORDAL_HOLD
-#define TAPPING_TERM 175 
+#define TAPPING_TERM 125 
 #define PERMISSIVE_HOLD
 #define QUICK_TAP_TERM_PER_KEY
 #define USB_VBUS_PIN 19
